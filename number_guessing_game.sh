@@ -26,6 +26,7 @@ elif [ "$num" -lt $randomNum ] ;then
 done
 if [ "$num" -eq $randomNum ]
 then
+  ((attempts++))    
   echo "correct number "
   sleep 2
   echo "You got it in $attempts attempts!"
@@ -33,4 +34,3 @@ then
   sleep 2.5
  fi
 }
-guess_game
