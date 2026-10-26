@@ -8,3 +8,6 @@ echo "1: Paper"
 sleep 0.5
 echo "2: Scissors"
 read -r playerAnswer
+randomNum=$(( RANDOM % 3))
+computerChoice=${choices[randomNum]}
+echo "$computerChoice"
